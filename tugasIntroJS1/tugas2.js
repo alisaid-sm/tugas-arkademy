@@ -42,7 +42,7 @@
 //         console.log("Nilai Harus Diisi");
 //     }
 // }
-// console.log(rataRataUN(200, 100, 100, 100))
+// rataRataUN(200, 100, 100, 100)
 
 // Berhasil tanpa menggunakan function
 const ind = 90;
@@ -50,9 +50,9 @@ const ingg = 90;
 const mtk = 90;
 const ipa = 90;
 
-if (ind != '' && ingg != '' && mtk != '' && ipa != '') {
+if (typeof ind == 'number' && typeof ingg == 'number' && typeof mtk == 'number' && typeof ipa == 'number') {
     const ratarata = (ind + ingg + mtk + ipa) / 4;
-    console.log('Rata-rata = ' + ratarata);
+    console.log(`Rata-Rata = ${ratarata}`);
     if (ratarata >= 0 && ratarata <= 59) {
         console.log("Grade = E");
     } else if (ratarata <= 69) {
@@ -67,7 +67,7 @@ if (ind != '' && ingg != '' && mtk != '' && ipa != '') {
         console.log("Nilai Salah");
     }
 } else {
-    console.log("Nilai Harus Diisi");
+    console.log("Input Harus Number dan Nilai Harus Diisi");
 }
 
 

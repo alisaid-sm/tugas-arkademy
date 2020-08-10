@@ -16,7 +16,7 @@
 // }
 // Ubahlah data  tersebut menggunakan spread operator menjadi: 
 // name: nama anda
-// email: email anda
+// email: email anda 
 // hobby: hobi anda
 
 // Ambilah data “street dan city” tersebut menggunakan destructuring
@@ -38,24 +38,14 @@ let data = {
 
 let dataUbah = {
     ...data,
-    id: 1,
     name: "Miftakh Ali Said",
-    username: "alisaid",
     email: "alisaid7171@gmail.com",
-    address:
-    {
-        street: "Jl. Combongan, jambidan, banguntapan",
-        suite: "",
-        city: "Bantul",
-        zipcode: "55195",
-    },
-    phone: "083830764460",
-    website: "alisaid.org",
     hobby: "Ngoding"
 }
 
 const { address } = dataUbah;
 const { street, city } = address;
 
+console.log(dataUbah)
 console.log(street)
 console.log(city)
