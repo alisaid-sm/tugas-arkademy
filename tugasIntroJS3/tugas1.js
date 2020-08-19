@@ -19,13 +19,13 @@ const cekHariKerja = (day) => {
     });
 }
 
-cekHariKerja('senin')// Memanggil function dengan argumen day, didalam function tersebut terdapat promise
-    .then((response) => { // Menangkap method resolve
-        console.log(`Hari ${response} merupakan hari kerja`) // menampilkan response
-    })
-    .catch((response) => { // menangkap method reject
-        console.log(response) // menampilkan response
-    })
+// cekHariKerja('senin')// Memanggil function dengan argumen day, didalam function tersebut terdapat promise
+//     .then((response) => { // Menangkap method resolve
+//         console.log(`Hari ${response} merupakan hari kerja`) // menampilkan response
+//     })
+//     .catch((response) => { // menangkap method reject
+//         console.log(response) // menampilkan response
+//     })
 
 const coba = async () => { // membuat function coba, function diubah menjadi synchronous
     try { // menangkap method resolve
@@ -39,4 +39,4 @@ const coba = async () => { // membuat function coba, function diubah menjadi syn
         console.log("Selesai")// menampilkan selesai
     }
 }
-coba() // memanggil function coba
+coba() // memanggil function coba 

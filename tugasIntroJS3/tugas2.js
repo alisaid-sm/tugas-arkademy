@@ -4,7 +4,7 @@
 
 const getmonth = (callback) => {
     setTimeout(() => {
-        let error = false;
+        let error = true;
         let month = ['Januari', 'February', 'March', 'April', 'May',
             'Juni', 'July', 'August', 'September', 'October', 'November',
             'Desember'];
@@ -23,4 +23,4 @@ const coba = (a, b) => {
         console.log(a)
     }
 }
-getmonth(coba)
+getmonth(coba) 

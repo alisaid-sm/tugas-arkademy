@@ -40,7 +40,7 @@
 
 //     })
 // }
-// cekSiswa(1)
+// cekSiswa(3)
 //     .then((response) => console.log(response))
 //     .catch((response) => console.log(response))
 // 2. mengecek kedisiplinan siswa selama sebulan
@@ -71,9 +71,9 @@ const siswa = (name, hadir, tdkhadir, izin) => {
 
 }
 
-const tampil = async () => {
+const tampil = async (name, hadir, tdkhadir, izin) => {
     try {
-        const response = await siswa('Miftakh ', 10, 1, '37')
+        const response = await siswa(name, hadir, tdkhadir, izin)
         console.log(response)
     } catch (error) {
         console.log(error)
@@ -82,7 +82,7 @@ const tampil = async () => {
     //     console.log('Proses Selesai')
     // }
 }
-tampil()
+tampil('Miftakh Ali Said', '1', 1, 1)
 
 
 
